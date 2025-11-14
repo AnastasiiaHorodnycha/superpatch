@@ -9,15 +9,16 @@
   <body>
     <header class="header">
       <div class="row header__container">
-        <a href="#top" class="logo">
-          <img src="images/SuperPatchHorizontal.svg" alt="Super Patch">
-        </a>
+        <span class="logo">
+          <img src="images/SuperPatchHorizontalBlack.svg" class="logo__mobile" alt="Super Patch">
+          <img src="images/SuperPatchHorizontal.svg" class="logo__desktop" alt="Super Patch">
+        </span>
       </div>
     </header>
 
     <!---->
 
-    <div id="top" class="hero">
+    <div if="top" class="hero">
       <div class="hero__video">
         <video src="video/643a523d37e44ef99814de4ad4af038e.HD-1080p-7.2Mbps-61166430.mp4" autoplay loop muted poster="images/Poster.png">
           Sorry, your browser doesn't support embedded videos, but don't worry, you can
@@ -32,13 +33,19 @@
             Subscription offer
           </h1>
           <p class="sub-title-l">
-            Discover a safe, drug-free patch system designed to ease stress, lift your mood, and help you stay in control.
+            Receive quarterly samples of clinically validated vibrotactile patches designed to support your patients' natural wellness.
           </p>
+          <div class="hero__img">
+            <img src="images/Poster_mobile.png" alt="">
+          </div>
         </div>
       </div>
     </div>
     <div class="small-banner">
-      <p>ONLY 248 SPOTS LEFT THIS QUARTER</p>
+      <div>
+        <p>ONLY 248 SPOTS LEFT THIS QUARTER</p>
+        <small class="small-banner__mobile">Get quarterly samples of patches for wellness.</small>
+      </div>
       <a href="#request" class="btn btn--mint-white js-anchor">enroll now</a>
     </div>
 
@@ -63,12 +70,13 @@
                 <p class="benefit__subtitle">Reduces Mild-Moderate Aches</p>
                 <p>
                   Sweep aside mild-moderate aches and pains. FREEDOM has been shown to 
-                  lessen discomfort without chemicals or medications.3,6 
+                  lessen discomfort without chemicals or medications.<sup>3,6</sup> 
                 </p>
               </div>
               <a 
                 href="#"
                 class="benefit__btn btn-text js-modal-open" 
+                data-img-url="pdf/NA-EU-UK-English-Freedom-SellSheet-2025.png"
                 data-pdf-url="pdf/NA-EU-UK-English-Freedom-SellSheet-2025.pdf">
                 Learn more
               </a>
@@ -83,12 +91,13 @@
                 <h4>REM Patch</h4>
                 <p class="benefit__subtitle">Supports Deeper Sleep</p>
                 <p>
-                  Enjoy longer, deeper sleep. REM has been shown to improve restorative sleep and reduce awakenings.4  
+                  Enjoy longer, deeper sleep. REM has been shown to improve restorative sleep and reduce awakenings.<sup>4</sup>  
                 </p>
               </div>
               <a 
                 href="#"
                 class="benefit__btn btn-text js-modal-open" 
+                data-img-url="pdf/NA-EU-UK-English-REM-SellSheet-2025.png"
                 data-pdf-url="pdf/NA-EU-UK-English-REM-SellSheet-2025.pdf">
                 Learn more
               </a>
@@ -103,12 +112,13 @@
                 <h4>Peace Patch</h4>
                 <p class="benefit__subtitle">Manages Stress & Anxiety</p>
                 <p>
-                  Manage the effects of stress and anxiety. PEACE has been shown to reduce stress and improve mental health.z  
+                  Manage the effects of stress and anxiety. PEACE has been shown to reduce stress and improve mental health.<sup>z</sup>  
                 </p>
               </div>
               <a 
                 href="#" 
                 class="benefit__btn btn-text js-modal-open" 
+                data-img-url="pdf/NA-EU-UK-English-Peace-SellSheet-2025.png"
                 data-pdf-url="pdf/NA-EU-UK-English-Peace-SellSheet-2025.pdf">
                 Learn more
               </a>
@@ -129,6 +139,7 @@
               <a 
                 href="#" 
                 class="benefit__btn btn-text js-modal-open" 
+                data-img-url="pdf/NA-EU-UK-English-Liberty-SellSheet-2025.png"
                 data-pdf-url="pdf/NA-EU-UK-English-Liberty-SellSheet-2025.pdf">
                 Learn more
               </a>
@@ -137,7 +148,6 @@
         </div>
       </div>
     </div>
-
 
     <!---->
 
@@ -172,13 +182,13 @@
         <p>
           Outcomes from multiple studies evaluating Vibrotactile Haptic 
           Technology have shown positive results with those subjects using 
-          patches for pain, sleep, balance, and stress/anxiety.3-7,10 
+          patches for pain, sleep, balance, and stress/anxiety.<sup>3-7,10</sup> 
           Additional randomized controlled trials (RCTs) are currently taking place.
         </p>
       </div>
 
       <div class="science__diagram container container--wide">
-        <img src="images/Diagram.png" alt="">
+        <img src="images/Diagram.svg" alt="">
       </div>
 
       <div class="container">
@@ -225,7 +235,7 @@
           REFERENCEs
         </h3>
 
-        <p>
+        <p class="text-break-word text-grey-dark">
           <sup>1.</sup> Cheng Y. (2021). TRPV1 and Piezo: the 2021 Nobel Prize in Physiology or Medicine. IUCrJ 9(Pt 1): 
           4-5. https://pmc.ncbi.nlm.nih.gov/articles/PMC8733883/ <sup>2.</sup> Tadge T, Pattewar A, More N, et al. (2024). 
           The role of Piezo1 and Piezo2 proteins in tissue engineering: A comprehensive review. 
@@ -252,7 +262,7 @@
       <div class="container">
         <div class="text-center">
           <h2>Backed by published clinical research</h2>
-          <p class="sub-title-m">Our Vibrotactile Technology (VVT) is supported by peer-reviewed studies and clinical evidence.</p>
+          <p class="sub-title-m sub-title-m--full-width">Our Vibrotactile Technology (VVT) is supported by peer-reviewed studies and clinical evidence.</p>
         </div>
 
         <div class="research">
@@ -336,24 +346,24 @@
             <p>25th World Congress of Psychiatry</p>
           </div>
           <div class="conference-list__item">
-            <div class="conference-list__img">
+            <div class="conference-list__img conference-list__img--efsma">
               <img src="images/conference/TSPC_Logo_Conference_EFSMA.png" alt="">
             </div>
             <p>13th EFSMA Congress of Sports Medicine</p>
           </div>
           <div class="conference-list__item">
-            <div class="conference-list__img">
+            <div class="conference-list__img conference-list__img--apss">
               <img src="images/conference/TSPC_Logo_Conference_APSS.png" alt="">
             </div>
             <p>39th Annual Meeting of the Associated Professional Sleep Societies</p>
           </div>
           <div class="conference-list__item">
-            <div class="conference-list__img">
+            <div class="conference-list__img conference-list__img--society">
               <img src="images/conference/TSPC_Logo_Conference_BritishPainSociety.png" alt="">
             </div>
             <p>58th Annual Scientific Meeting of The British Pain Society</p>
           </div>
-          <div class="conference-list__item">
+          <div class="conference-list__item conference-list__img--phychiatry">
             <div class="conference-list__img">
               <img src="images/conference/TSPC_Logo_Conference_WorldCongressOfPsychiatry.png" alt="">
             </div>
@@ -383,168 +393,205 @@
 
     <!---->
 
-    <div id="request" class="request section bg-light-grey">
-      <div class="container container--narrow">
-        <div class="text-center">
-          <span class="text-label">ONLY 248 SPOTS LEFT THIS QUARTER</span>
-          <h2>Request a Free Sample</h2>
-          <p class="sub-title-m">
-            Subscribe to free quarterly samples of Super Patch patches. Subscription includes a
-            minimum of 24 samples per quarter (exact product may vary). First shipment arrives in 5-6 weeks.
-          </p>
-        </div>
+    <div class="mobile-reverse-section">
+      <div id="request" class="request section bg-light-grey">
+        <div class="container container--narrow">
+          <div class="text-center">
+            <span class="text-label">ONLY 248 SPOTS LEFT THIS QUARTER</span>
+            <h2>Request a Free Sample</h2>
+            <p class="sub-title-m">
+              Subscribe to free quarterly samples of Super Patch patches. Subscription includes a
+              minimum of 24 samples per quarter (exact product may vary). First shipment arrives in 5-6 weeks.
+            </p>
+          </div>
 
-        <div class="custom-form-wrap">
-          <form class="custom-form" action="#">
-            <p class="sub-title-m text-black text-bold text-center">Please check the box(s) below and complete all required fields (*).</p>
-            <div class="row">
-              <label class="custom-checkbox">
-                <input type="checkbox" name="subscribe" />
-                <span class="custom-checkbox__icon"></span>
-                Yes, I would like to subscribe to free quarterly samples of Super Patch patches.
-              </label>
-            </div>
-            <div class="row">
-              <label class="custom-checkbox">
-                <input type="checkbox" name="interested" />
-                <span class="custom-checkbox__icon"></span>
-                Yes, I am interested in learning more about becoming a potential study investigator.
-              </label>
-            </div>
-            <div class="row in-line">
-              <div class="col">
-                <label class="custom-form__label" for="first-name">First Name *</label>
-                <input type="text" id="first-name" name="first-name" class="custom-form__field" placeholder="Enter your first name" required />
+          <div class="custom-form-wrap js-form-wrap">
+            <form class="custom-form" id="js-form">
+              <p class="sub-title-m text-black text-bold text-center">Please check the box(s) below and complete all required fields (*).</p>
+              <div class="row">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="subscribe" />
+                  <span class="custom-checkbox__icon"></span>
+                  Yes, I would like to subscribe to free quarterly samples of Super Patch patches.
+                </label>
               </div>
-              <div class="col">
-                <label class="custom-form__label" for="last-name">Last Name *</label>
-                <input type="text" id="last-name" name="last-name" class="custom-form__field" placeholder="Enter your last name" required />
+              <div class="row">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="interested" />
+                  <span class="custom-checkbox__icon"></span>
+                  Yes, I am interested in learning more about becoming a potential study investigator.
+                </label>
+              </div>
+              <div class="row in-line">
+                <div class="col">
+                  <label class="custom-form__label" for="first-name">First Name *</label>
+                  <input type="text" id="first-name" name="first-name" class="custom-form__field js-field" placeholder="Enter your first name" data-required />
+                  <small class="custom-form__error js-error-message">
+                    Please enter your first name
+                  </small>
+                </div>
+                <div class="col">
+                  <label class="custom-form__label" for="last-name">Last Name *</label>
+                  <input type="text" id="last-name" name="last-name" class="custom-form__field js-field" placeholder="Enter your last name" data-required />
+                  <small class="custom-form__error js-error-message">
+                    Please enter your last name
+                  </small>
+                </div>
+              </div>
+              <div class="row">
+                <label class="custom-form__label" for="business-address">Business Address *</label>
+                <input type="text" id="business-address" name="business-address" class="custom-form__field js-field" placeholder="Street address, city, state, ZIP" data-required />
+                <small class="custom-form__error js-error-message">
+                  Please provide a valid mailing address
+                </small>
+              </div>
+              <div class="row">
+                <label class="custom-form__label" for="business-fax-number">Business Fax Number *</label>
+                <input type="number" id="business-fax-number" name="business-fax-number" class="custom-form__field js-field" placeholder="e.g., (555) 987-6543" data-required />
+                <small class="custom-form__error js-error-message">
+                  Please enter a valid fax number
+                </small>
+              </div>
+              <div class="row">
+                <label class="custom-form__label" for="business-email">Business Email *</label>
+                <input type="email" id="business-email" name="business-email" class="custom-form__field js-field" placeholder="name@clinic.com" data-required />
+                <small class="custom-form__error js-error-message">
+                  Please enter a valid email address
+                </small>
+              </div>
+              <div class="row">
+                <label class="custom-form__label" for="npi-number">NPI Number *</label>
+                <input type="number" id="npi-number" name="npi-number" class="custom-form__field js-field" placeholder="10-digit National Provider Identifier" data-required />
+                <small class="custom-form__error js-error-message">
+                  Please enter a valid 10-digit NPI number
+                </small>
+                <small class="custom-form__warning">We'll verify your credentials with NPPES</small>
+              </div>
+              <div class="row">
+                <label class="custom-form__label" for="speciality">Specialty</label>
+                <input type="text" id="speciality" name="speciality" class="custom-form__field js-field" placeholder="e.g., Family Medicine, Dermatology, Pediatrics" data-required />
+                <small class="custom-form__error js-error-message">
+                  Please enter your medical specialty
+                </small>
+              </div>
+              <div class="row justify-content-center">
+                <button type="submit" class="btn btn--mint-white js-submit-form">Submit</button>
+              </div>
+            </form>
+            <p class="text-center text-medium text-grey-dark">
+              18 Clinicians from Major Institutions Enrolled in the Last 24 Hours
+            </p>
+          </div>
+
+          <div class="custom-form-success js-form-success">
+            <h4>Your subscription Request has been received</h4>
+            <p>
+              We're excited to introduce you and your patients to Super Patch. 
+              Our team will be reviewing your information. Once verified, your 
+              first shipment will arrive in <strong>5-6 weeks</strong>. 
+              In the meantime, keep an eye on your inbox for a confirmation 
+              email with shipping details and program updates.
+            </p>
+            <p>
+              If you expressed interest in becoming a <strong>study investigator</strong>, 
+              our team will contact you with more information.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!---->
+
+      <div class="faq section">
+        <div class="container">
+          <div class="text-center">
+            <h3 class="faq__headline">Frequently Asked Questions</h3>
+            <p class="sub-title-m">Everything you need to know about the Super Patch Sampler Program</p>
+          </div>
+        
+          <div class="accordion js-accordion">
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                Who is eligible to join the Sampler Program?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <label class="custom-form__label" for="business-address">Business Address *</label>
-              <input type="text" id="business-address" name="business-address" class="custom-form__field" placeholder="Street address, city, state, ZIP" required />
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                What’s included in the sampler shipment?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <label class="custom-form__label" for="business-fax-number">Business Fax Number *</label>
-              <input type="number" id="business-fax-number" name="business-fax-number" class="custom-form__field" placeholder="e.g., (555) 987-6543" required />
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                When will my samples arrive?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <label class="custom-form__label" for="business-email">Business Email *</label>
-              <input type="email" id="business-email" name="business-email" class="custom-form__field" placeholder="name@clinic.com" required />
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                Are there any costs or commitments?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <label class="custom-form__label" for="npi-number">NPI Number *</label>
-              <input type="number" id="npi-number" name="npi-number" class="custom-form__field" placeholder="10-digit National Provider Identifier" required />
-              <small>We'll verify your credentials with NPPES</small>
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                What research supports the technology?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <label class="custom-form__label" for="speciality">Specialty</label>
-              <input type="text" id="speciality" name="speciality" class="custom-form__field" placeholder="e.g., Family Medicine, Dermatology, Pediatrics" />
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                Can I share patient outcomes or feedback?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            <div class="row justify-content-center">
-              <button type="submit" class="btn btn--mint-white">Submit</button>
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion__title js-accordion-btn">
+                How does Super Patch fit into patient care?
+              </div>
+              <div class="js-accordion-content">
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-          </form>
-          <p class="text-center text-medium text-grey-dark">
-            18 Clinicians from Major Institutions Enrolled in the Last 24 Hours
-          </p>
+          </div>
         </div>
       </div>
     </div>
 
     <!---->
-
-    <div id="faq" class="faq section">
-      <div class="container">
-        <div class="text-center">
-          <h3 class="faq__headline">Frequently Asked Questions</h3>
-          <p class="sub-title-m">Everything you need to know about the Super Patch Sampler Program</p>
-        </div>
-      
-        <div class="accordion js-accordion">
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              Who is eligible to join the Sampler Program?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              What’s included in the sampler shipment?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              When will my samples arrive?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              Are there any costs or commitments?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              What research supports the technology?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              Can I share patient outcomes or feedback?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion__item js-accordion-item">
-            <div class="accordion__title js-accordion-btn">
-              How does Super Patch fit into patient care?
-            </div>
-            <div class="js-accordion-content">
-              <div class="accordion__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!---->
-
 
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__top">
           <div>
-            <a href="#top" class="footer__logo"><img src="images/SuperPatchHorizontal.svg" alt="Super Patch"></a>
+            <a href="#top" class="footer__logo js-anchor"><img src="images/SuperPatchHorizontal.svg" alt="Super Patch"></a>
             <p>Live Super. Naturally.</p>
           </div>
           <div class="footer__nav row">
@@ -560,7 +607,7 @@
               <h5>Support</h5>
               <ul>
                 <li>Questions about enrollment?</li>
-                <li><a href="mailto:hcp-support@superpatch.com">hcp-support@superpatch.com</a></li>
+                <li><a href="mailto:hcp-support@superpatch.com" class="footer__email-link">hcp-support@superpatch.com</a></li>
               </ul>
             </div>
           </div>
@@ -593,10 +640,10 @@
     <div class="modal js-modal">
       <div class="modal__content">
         <div class="modal__img-wrap">
-          <iframe class="js-modal-img" src="">
+          <img class="js-modal-poster" src=""></img>
         </div>
 
-        <a href="#" class="modal__btn js-download-pdf" data-pdf-url="pdf/NA-EU-UK-English-Joy-SellSheet-2025.pdf">
+        <a href="#" class="modal__btn js-download-pdf">
           <img src="images/icons/download-icon.svg" alt="">
         </a>
         <span class="modal__btn js-modal-close">
