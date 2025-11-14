@@ -11,26 +11,8 @@ window.addEventListener('scroll', function () {
   }
 });
 
-/**
- * Mobile Menu Button Click
- */
-document.querySelectorAll('.js-mobile-menu-btn').forEach(btn => {
-  btn.addEventListener('click', function () {
-    const menu = document.querySelector('.js-mobile-menu');
-    if (menu) {
-      document.body.classList.toggle('menu-opened');
-    }
-  });
-});
+console.log('dddd');
 
-// Close menu when clicking outside
-document.querySelectorAll('.js-mobile-menu').forEach(menu => {
-  menu.addEventListener('click', function (e) {
-    if (e.target === menu) {
-      document.body.classList.remove('menu-opened');
-    }
-  });
-});
 
 
 /**
